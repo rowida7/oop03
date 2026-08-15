@@ -37,6 +37,12 @@ namespace oop02
             CustomsFee = customsFee;
         }
 
-        public double EstimatedCost { get { return DeliveryFee + (Weight * 5d) + CustomsFee; } }
+        public override double EstimatedCost { get { return DeliveryFee + (Weight * 5d) + CustomsFee; } }
+
+        public override void PrintShipment()
+        {
+            base.PrintShipment();
+            Console.WriteLine($"Custom Fee:{CustomsFee}\nDestination Country:{DestinationCountry}");
+        }
     }
 }

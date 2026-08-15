@@ -13,6 +13,11 @@ namespace oop02
         public StandardShipment(string trackingCode, string description, double weight, double deliveryFree, DeliveryAddress destination)
            : base(trackingCode, description, weight, deliveryFree, destination) { }
 
+        public override void PrintShipment()
+        {
+            base.PrintShipment();
+        }
+
         
     }
 }

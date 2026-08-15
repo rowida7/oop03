@@ -28,6 +28,12 @@ namespace oop02
         public ExpressShipment() { }
 
 
-        public double EstimatedCost { get { return DeliveryFee + (Weight * 5d) + ExtraFee; } }
+        public override double EstimatedCost { get { return DeliveryFee + (Weight * 5d) + ExtraFee; } }
+
+        public override void PrintShipment()
+        {
+            base.PrintShipment();
+            Console.WriteLine($"Extra Fee:{ExtraFee}");
+        }
     }
 }
