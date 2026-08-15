@@ -78,6 +78,7 @@ namespace oop03
             Console.WriteLine($"Updated Weight :{shipment.Weight}");
             shipment.UpdateWeight(5, 0.5);
             Console.WriteLine($"Updated Weight After Packing :{shipment.Weight}");
+            Console.WriteLine("------------------------------");
 
             // k.Build a Shipment[] holding mixed types and print all of them in a loop.
             Console.WriteLine("Printing Using Shipment[]...");
