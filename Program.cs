@@ -27,26 +27,8 @@
             // No, because it's stoping the overriding chain
             #endregion
 
-        
-
-            #region Override EstimatedCost
-            #endregion
-
-            #region Override PrintShipment()
-            #endregion
-
-            #region Update DeliveryCenter
-            #endregion
-
-            #region Create DeliveryHelper
-            #endregion
-
-            #region Sealed Class
-            #endregion
-
-            #region Sealed Method
-            #endregion
-
+       
+       
             #region Main() Checklist
             #endregion
         }

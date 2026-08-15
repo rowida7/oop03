@@ -44,5 +44,11 @@ namespace oop02
             base.PrintShipment();
             Console.WriteLine($"Custom Fee:{CustomsFee}\nDestination Country:{DestinationCountry}");
         }
+
+
+        public virtual void GenerateCustomsReport()
+        {
+            Console.WriteLine("International customs report");
+        }
     }
 }
