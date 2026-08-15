@@ -10,6 +10,7 @@ namespace oop03
         public static void PrintShipmentDetails(Shipment shipment)
         {
             shipment.PrintShipment();
+            Console.WriteLine("-------------------------");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using oop03;
+using System;
 using System.Collections.Generic;
 using System.Reflection.PortableExecutable;
 using System.Text;
@@ -10,9 +11,10 @@ namespace oop02
     {
         private Shipment[] shipments;
         public string CenterName {  get; set; }
+        public Driver Driver { get; set; }
         public DeliveryCenter()
         {
-            shipments = new Shipment[20];
+            shipments = new Shipment[3];
         }
 
         #region Add an integer indexer
@@ -123,11 +125,23 @@ namespace oop02
             foreach(Shipment shipment in shipments)
             {
                 //Modify PrintAllShipments()
-                shipment.PrintShipment();     
+                shipment.PrintShipment();
+                Console.WriteLine("=========================");
             }
             
         }
 
+
+
+        public void PrintInfo()
+        {
+            Console.WriteLine("=========================");
+            Console.WriteLine("Delivery Center");
+            Console.WriteLine("=========================");
+            Console.WriteLine($"\nDriver:{Driver.Name}\n");
+            Console.WriteLine("-------------------------");
+
+        }
         #endregion
 
     }
