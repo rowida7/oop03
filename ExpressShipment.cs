@@ -33,7 +33,6 @@ namespace oop02
         public override void PrintShipment()
         {
             base.PrintShipment();
-
             Console.WriteLine($"Extra Fee:{ExtraFee}");
         }
     }

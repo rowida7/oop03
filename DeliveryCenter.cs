@@ -122,7 +122,8 @@ namespace oop02
         {
             foreach(Shipment shipment in shipments)
             {
-                Console.WriteLine(shipment);     
+                //Modify PrintAllShipments()
+                shipment.PrintShipment();     
             }
             
         }
